@@ -15,7 +15,7 @@ function App() {
     flex
     flex-col
     justify-between
-    pt-10
+    pt-5
     px-[10px]
     md:px-[20px]
     lg:px-[100px]
