@@ -234,36 +234,47 @@ function App() {
         </header>
 
         <div>
-          <p className="font-[Anta] text-center text-sm md:text-xl uppercase tracking-widest  text-[#8ceaea] drop-shadow-lg py-5">
+          <p className="font-[Anta] text-center leading-6 text-base md:text-xl uppercase tracking-widest  text-[#8ceaea] drop-shadow-lg py-5">
             Rise as the greatest galactic commander of the universe. Build your
             own legacy among the stars
           </p>
           <div className="flex justify-center">
-            <img className="w-1/2" src="/imgi_3_logo.png" />
+            <img className="w-full lg:w-1/2" src="/imgi_3_logo.png" />
           </div>
         </div>
         <div className="grid grid-cols-2 2xl:hidden lg:grid-cols-4 md:grid-cols-4 gap-0.5 py-5">
-          <div className="flex py-2 flex-col justify-center items-center">
-            <img className="w-full" src="/imgi_7_4.png" />
-            <p className="text-center font-[Anta] font-black text-yellow-400 lg:text-2xl lg:w-48 tracking-wider text-stroke drop-shadow-[1px_6px_3px_#000000]">
-              PLAYER<br></br>ALLIANCES
-            </p>
-          </div>
-          <div className="flex py-2 flex-col justify-center items-center">
-            <img className="w-full" src="/imgi_6_3.png" />
-            <p className="text-center font-[Anta] font-black text-yellow-400 lg:text-2xl lg:w-48 tracking-wider text-stroke drop-shadow-[1px_6px_3px_#000000]">
+           <div className="flex py-2 flex-col justify-center items-center">
+             <img className="w-full" src="/imgi_4_1.png" />
+            
+            <p className="text-3d-gold text-center font-[Russo_One] uppercase
+               text-xl
+               tracking-wide">
               AVATAR<br></br>COMMANDERS
             </p>
           </div>
           <div className="flex py-2 flex-col justify-center items-center">
             <img className="w-full" src="/imgi_5_2.png" />
-            <p className="font-black font-[Anta] text-center text-yellow-400 lg:text-2xl lg:w-48 tracking-wider text-stroke drop-shadow-[1px_6px_3px_#000000]">
+           
+            <p className="text-3d-gold text-center font-[Russo_One] uppercase
+               text-xl
+               tracking-wide">
+              PLAYER<br></br>ALLIANCES
+            </p>
+          </div>
+          <div className="flex py-2 flex-col justify-center items-center">
+            <img className="w-full" src="/imgi_6_3.png" />
+            
+            <p className="text-3d-gold text-center font-[Russo_One] uppercase
+               text-xl
+               tracking-wide">
               PERSISTENT<br></br>BATTLES
             </p>
           </div>
           <div className="flex py-2 flex-col justify-center items-center">
-            <img className="w-full" src="/imgi_4_1.png" />
-            <p className="text-center font-[Anta] font-black text-yellow-400 lg:text-2xl lg:w-48 tracking-wider text-stroke drop-shadow-[1px_6px_3px_#000000]">
+            <img className="w-full" src="/imgi_7_4.png" />
+            <p className="text-3d-gold text-center font-[Russo_One] uppercase
+               text-xl
+               tracking-wide">
               STRATEGIC<br></br>DECISIONS
             </p>
           </div>
@@ -271,29 +282,41 @@ function App() {
         <div className="h-[50vh] lg:h-[63vh]">
           <div className="flex h-full md:items-end">
             <div className="w-full hidden xl:w-2/3 2xl:flex flex-col justify-between pt-8">
-              <div className="hidden lg:grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-2 py-5">
-                <div className="flex flex-col justify-center items-center">
-                  <img className="w-11/12" src="/imgi_7_4.png" />
-                  <p className="text-center font-black text-yellow-400 font-[Anta] lg:text-2xl lg:w-48 tracking-wider text-stroke drop-shadow-[1px_6px_3px_#000000]">
-                    PLAYER ALLIANCES
+              <div className="hidden lg:grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-2 pb-8">
+                 <div className="flex flex-col justify-center items-center">
+                
+                   <img className="w-11/12" src="/imgi_4_1.png" />
+                  <p className="text-3d-gold text-center font-[Russo_One] uppercase
+               text-2xl
+               tracking-wide">
+                    AVATAR<br></br>COMMANDERS
                   </p>
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                  <img className="w-11/12" src="/imgi_6_3.png" />
-                  <p className="text-center font-black text-yellow-400 font-[Anta] lg:text-2xl lg:w-48 tracking-wider text-stroke drop-shadow-[1px_6px_3px_#000000]">
-                    AVATAR COMMANDERS
+                 
+                    <img className="w-11/12" src="/imgi_5_2.png" />
+                  <p className="text-3d-gold text-center font-[Russo_One] uppercase
+               text-2xl
+               tracking-wide">
+                    PLAYER<br></br>ALLIANCES
+                  </p>
+                </div>
+               
+                <div className="flex flex-col justify-center items-center">
+                 
+                    <img className="w-11/12" src="/imgi_6_3.png" />
+                  <p className="text-3d-gold text-center font-[Russo_One] uppercase
+               text-2xl
+               tracking-wide">
+                    PERSISTENT<br></br>BATTLES
                   </p>
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                  <img className="w-11/12" src="/imgi_5_2.png" />
-                  <p className="font-black text-center text-yellow-400 font-[Anta] lg:text-2xl lg:w-48 tracking-wider text-stroke drop-shadow-[1px_6px_3px_#000000]">
-                    PERSISTENT BATTLES
-                  </p>
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                  <img className="w-11/12" src="/imgi_4_1.png" />
-                  <p className="text-center font-black text-yellow-400 font-[Anta] lg:text-2xl lg:w-48 tracking-wider text-stroke drop-shadow-[1px_6px_3px_#000000]">
-                    STRATEGIC DECISIONS
+                 <img className="w-11/12" src="/imgi_7_4.png" />
+                  <p className="text-3d-gold text-center font-[Russo_One] uppercase
+               text-2xl
+               tracking-wide">
+                    STRATEGIC<br></br>DECISIONS
                   </p>
                 </div>
               </div>
@@ -305,9 +328,9 @@ function App() {
               </div>
             </div>
             <div className="w-full  flex items-end justify-center 2xl:w-1/3  bg-[url(/imgi_8_7.png)] bg-contain bg-no-repeat bg-bottom h-full">
-              <div className="flex px-5 2xl:hidden items-center justify-center flex-col w-full z-10">
+              <div className="flex 2xl:hidden items-center justify-center flex-col w-full z-10">
                 <img src="/imgi_16_5.png" />
-                <button className="bg-[url(/imgi_9_6.png)] -mt-22 lg:-bottom-5 w-4/10 h-[15vh] bg-contain bg-no-repeat bg-center hover:scale-110 transition duration-300 ease-in-out transform cursor-pointer"></button>
+                <button className="bg-[url(/imgi_9_6.png)] -mt-17 md:-mt-30 lg:-bottom-5 w-4/10 h-[15vh] bg-contain bg-no-repeat bg-center hover:scale-110 transition duration-300 ease-in-out transform cursor-pointer"></button>
               </div>
             </div>
           </div>
