@@ -28,7 +28,6 @@ function App() {
       >
         <header className="w-full relative z-50">
           <div className="h-16 flex items-center justify-between gap-3">
-            {/* LEFT: Logo + brand + (desktop search) */}
             <div className="flex items-center gap-7">
               <div className="flex gap-3">
                 <img
@@ -41,7 +40,6 @@ function App() {
                 </span>
               </div>
 
-              {/* search (md+ only) */}
               <span className="hidden md:flex text-white cursor-pointer items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 ring-1 ring-white/15">
                 <IoSearchSharp />
                 <span>Search</span>
@@ -51,7 +49,6 @@ function App() {
               </span>
             </div>
 
-            {/* RIGHT: desktop nav + switch + socials */}
             <div className="hidden lg:flex gap-5 items-center">
               <a
                 className="text-[#fdff36] cursor-pointer hover:text-[#fdff36]/90"
@@ -77,11 +74,10 @@ function App() {
                 onClick={() => setOn(!on)}
                 className={[
                   "relative inline-flex items-center h-7 w-14 rounded-full transition-colors duration-300",
-                  "bg-transparent ring-1 ring-white/40", // transparent bg + white border
+                  "bg-transparent ring-1 ring-white/40", 
                 ].join(" ")}
                 aria-label="Theme switch (UI only)"
               >
-                {/* knob */}
                 <span
                   className={[
                     "absolute top-1 left-1 h-5 w-5 rounded-full transition-transform duration-300 ease-out",
@@ -89,7 +85,6 @@ function App() {
                     on ? "translate-x-7" : "translate-x-0",
                   ].join(" ")}
                 >
-                  {/* moon icon (light white stroke) */}
                   <svg
                     viewBox="0 0 24 24"
                     className="absolute inset-0 m-auto h-3.5 w-3.5"
@@ -98,7 +93,7 @@ function App() {
                     <path
                       d="M12.5 3.5c-4.9 0-8.9 4-8.9 8.9 0 4.1 2.8 7.6 6.6 8.6 2 .6 4.4.4 6.3-.6-3.6-.2-6.5-3.1-6.5-6.8 0-3.2 2.2-5.9 5.2-6.6-0.8-0.3-1.7-0.5-2.7-0.5z"
                       fill="none"
-                      stroke="rgba(255,255,255,0.7)" // subtle white stroke
+                      stroke="rgba(255,255,255,0.7)" 
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -112,9 +107,7 @@ function App() {
               <FaTwitter className="text-white/90 cursor-pointer hover:text-white text-2xl" />
             </div>
 
-            {/* Mobile actions */}
             <div className="flex lg:hidden items-center gap-3">
-              {/* compact search icon on mobile */}
               <button
                 className="md:hidden p-2 rounded-full ring-1 ring-white/15 text-white/90 hover:bg-white/10"
                 aria-label="Search"
@@ -133,7 +126,6 @@ function App() {
             </div>
           </div>
 
-          {/* Backdrop so clicks section-এ না পড়ে */}
           {menuOpen && (
             <div
               className="fixed inset-0 bg-black/40 backdrop-blur-[1px] z-40"
@@ -141,7 +133,6 @@ function App() {
             />
           )}
 
-          {/* FULL-WIDTH mobile dropdown (absolute) */}
           <div
             className={[
               "absolute top-16 left-0 right-0 z-50 lg:hidden transition-all duration-200",
@@ -183,7 +174,6 @@ function App() {
 
               <div className="my-2 h-px bg-white/10" />
 
-              {/* Theme switcher (same colors) */}
               <div className="flex items-center justify-between px-1 py-1.5">
                 <span className="text-white/80">Theme</span>
                 <button
@@ -191,11 +181,10 @@ function App() {
                   onClick={() => setOn(!on)}
                   className={[
                     "relative inline-flex items-center h-7 w-14 rounded-full transition-colors duration-300",
-                    "bg-transparent ring-1 ring-white/40", // transparent bg + white border
+                    "bg-transparent ring-1 ring-white/40", 
                   ].join(" ")}
                   aria-label="Theme switch (UI only)"
                 >
-                  {/* knob */}
                   <span
                     className={[
                       "absolute top-1 left-1 h-5 w-5 rounded-full transition-transform duration-300 ease-out",
@@ -203,7 +192,6 @@ function App() {
                       on ? "translate-x-7" : "translate-x-0",
                     ].join(" ")}
                   >
-                    {/* moon icon (light white stroke) */}
                     <svg
                       viewBox="0 0 24 24"
                       className="absolute inset-0 m-auto h-3.5 w-3.5"
@@ -212,7 +200,7 @@ function App() {
                       <path
                         d="M12.5 3.5c-4.9 0-8.9 4-8.9 8.9 0 4.1 2.8 7.6 6.6 8.6 2 .6 4.4.4 6.3-.6-3.6-.2-6.5-3.1-6.5-6.8 0-3.2 2.2-5.9 5.2-6.6-0.8-0.3-1.7-0.5-2.7-0.5z"
                         fill="none"
-                        stroke="rgba(255,255,255,0.7)" // subtle white stroke
+                        stroke="rgba(255,255,255,0.7)" 
                         strokeWidth="1.5"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -232,7 +220,6 @@ function App() {
             </nav>
           </div>
         </header>
-
         <div>
           <p className="font-[Anta] text-center leading-6 text-base md:text-xl uppercase tracking-widest  text-[#8ceaea] drop-shadow-lg py-5">
             Rise as the greatest galactic commander of the universe. Build your
@@ -323,14 +310,14 @@ function App() {
               <div className="flex justify-end pb-5">
                 <div className="flex items-center justify-end flex-col w-4/5 -mr-50 z-10">
                   <img src="/imgi_16_5.png" />
-                  <button className="-mt-29 bg-[url(/imgi_9_6.png)] w-2/5 h-32 bg-contain bg-no-repeat bg-center hover:scale-110 transition duration-300 ease-in-out transform cursor-pointer"></button>
+                  <button className="-mt-27 bg-[url(/imgi_9_6.png)] w-2/5 h-32 bg-contain bg-no-repeat bg-center hover:scale-110 transition duration-300 ease-in-out transform cursor-pointer"></button>
                 </div>
               </div>
             </div>
             <div className="w-full  flex items-end justify-center 2xl:w-1/3  bg-[url(/imgi_8_7.png)] bg-contain bg-no-repeat bg-bottom h-full">
               <div className="flex 2xl:hidden items-center justify-center flex-col w-full z-10">
                 <img src="/imgi_16_5.png" />
-                <button className="bg-[url(/imgi_9_6.png)] -mt-17 md:-mt-30 lg:-bottom-5 w-4/10 h-[15vh] bg-contain bg-no-repeat bg-center hover:scale-110 transition duration-300 ease-in-out transform cursor-pointer"></button>
+                <button className="bg-[url(/imgi_9_6.png)] -mt-20 md:-mt-30 lg:-bottom-5 w-4/10 h-[15vh] bg-contain bg-no-repeat bg-center hover:scale-110 transition duration-300 ease-in-out transform cursor-pointer"></button>
               </div>
             </div>
           </div>
