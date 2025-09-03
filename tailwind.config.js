@@ -3,14 +3,12 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      // We define custom breakpoints to precisely target the requested resolutions.
-      // Tailwind is mobile-first, so styles without a prefix apply to all sizes.
       screens: {
-        'md': '768px',    // Standard tablet breakpoint
-        'lg': '1024px',   // Standard small laptop breakpoint
-        'xl': '1280px',   // Targets 1280x800 resolution
-        '2xl': '1920px',  // Targets 1920x1080 (FHD) resolution
-        '3xl': '2560px',  // Targets 2560x1440 (QHD) resolution
+        'md': '768px',    // Tablet
+        'lg': '1024px',   // Laptop
+        '2xl': '1536px',  // 1920px Desktop
+        '3xl': '2560px',  // 2560px Desktop
+        '4xl': '3072px',  // ADD THIS LINE for 3072px screens
       },
     },
   },
