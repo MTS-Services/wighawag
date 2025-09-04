@@ -32,7 +32,7 @@ function App() {
         {/* ================================================================== */}
         {/* ========================== HEADER ================================ */}
         {/* ================================================================== */}
-        <header className="w-full relative z-50">
+        <header className="w-full relative z-50 px-7">
           <div className="h-16 flex items-center justify-between gap-3">
             <div className="flex items-center gap-7">
               <div className="flex gap-3 items-center">
@@ -93,7 +93,7 @@ function App() {
         {/* ================================================================== */}
         {/* ======================== MAIN CONTENT ============================ */}
         {/* ================================================================== */}
-        <div>
+        <div className="px-7">
           <p className="font-[Anta] text-center uppercase tracking-widest text-[#8ceaea] drop-shadow-lg py-5 text-base md:text-xl">
             Rise as the greatest galactic commander of the universe. Build your own legacy among the stars
           </p>
