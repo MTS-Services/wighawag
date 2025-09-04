@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-      <section className="min-h-screen w-full flex flex-col justify-between pt-5 px-4 md:px-8 lg:px-24 bg-[url(/imgi_1_bg2.png)] bg-cover bg-no-repeat bg-center">
+      <section className="min-h-screen w-full flex flex-col justify-between pt-5  md:px-8 lg:px-24 bg-[url(/imgi_1_bg2.png)] bg-cover bg-no-repeat bg-center">
         {/* ================================================================== */}
         {/* ========================== HEADER ================================ */}
         {/* ================================================================== */}
